@@ -1,6 +1,7 @@
 import time
 import logging
 from win32 import win32print
+from classes import Job, Printer
 
 logging.basicConfig(filename="printmonkeymonitor.log", level=logging.INFO)
 
@@ -59,6 +60,26 @@ def print_job_checker():
             )
         finally:
             win32print.ClosePrinter(phandle)
+
+
+def submit_printers_list(printers_lst: list()):
+    # TODO
+    pass
+
+
+def submit_printer(printer: Printer):
+    # TODO
+    pass
+
+
+def submit_jobs_list(jobs_lst: list()):
+    # TODO
+    pass
+
+
+def submit_job(job: Job):
+    # TODO
+    pass
 
 
 if __name__ == "__main__":
