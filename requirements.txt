@@ -1,1 +1,3 @@
+black==21.12b0
 pywin32==303
+requests==2.27.1
